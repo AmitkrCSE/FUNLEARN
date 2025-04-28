@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funlearn Courses</title>
+    <style>
+           body {
+            /* display: flex; */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+
+            --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: pink;
+  --c2: dodgerblue;
+  --c3: white;
+  --bg: var(--c3);
+  --d: 4000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+
+}
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+  }
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .course-card{
+            width: 246px;
+            height: 230px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            background:radial-gradient(circle, rgba(238,174,202,1) 35%, rgba(148,187,233,1) 100%);;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.02);
+        }
+
+        .course-card p {
+            font-size: 19px;
+            text-align: center;
+            color: #333;
+            font-weight: bolder;
+        }
+
+        .enroll-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 98px;
+        }
+        header h1{
+            display: block;
+            margin-left: 427px;
+            font-size: 35px;
+            color: #ff8c1a;
+            font-weight: bold;
+        }
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:16px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding: 15px 40px;
+  width: 138px;
+  margin-left: 14px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Our Online Courses</h1>
+    </header>
+
+
+    <div class="container">
+        <!-- Course 1 -->
+        <div class="course-card">
+            <p class="P">UI and UX course</p>
+            <div class="button">
+                <a href="UI&UX/UI&UX.html" target="_blank" class="enroll-btn">&#128073;Enroll Now &#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+            <p>Project Management course</p>
+            <div class="button">
+                <a href="PM/index.html" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+            <p>Cybersecurity course</p>
+            <div class="button">
+                <a href="#" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+            <p>Artifical Intelligence course</p>
+            <div class="button">
+                <a href="AI/AI.html" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card">
+            <p>Machine Learning</p>
+            <div class="button">
+                <a href="ML/ML.html" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card">
+            <p>Backend developer course</p>
+            <div class="button">
+                <a href="#" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="course-card">
+            <p>Python course</p>
+            <div class="button">
+                <a href="#" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="course-card">
+            <p>NEET Course</p>
+            <div class="button">
+                <a href="neet/index.html" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+        <!-- Course 9 -->
+        <div class="course-card">
+            <p>JEE AND JEE Advanced Course</p>
+            <div class="button">
+                <a href="jee/index.html" target="_blank" class="enroll-btn">&#128073;Enroll Now&#128072;</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

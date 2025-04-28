@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management - FunLearn</title>
+
+  
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">FunLearn</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">FunLearn</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+      
+     
+      <a href="#" class="btn-outline">Sign Up</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before">Welcome to FunLearn</p>
+
+            <h1 class="h1 hero-title">Best Online Learning Platform For Product Management.</h1>
+
+            <p class="hero-text">
+              The Product Management course is designed to equip learners with the essential skills and knowledge required to manage Product efficiently. 
+              This comprehensive course covers the fundamentals of Product management, including planning, execution, and monitoring.
+
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+
+              <button class="flex-btn">
+                <div class="btn-icon">
+                  <ion-icon name="play" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Learn Now !! </span>
+              </button>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner has-before img-holder" style="--width: 650; --height: 650;">
+            <img src="images/hero-banner.png" width="650" height="650" alt="hero banner" class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="images/about-banner.png" width="802" height="654" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2-sm section-title">We create some things, Design for your success future.</h2>
+
+            <p class="section-text">
+              Boost your Product management skills as you learn
+               how to best manage people, teams, and budgets, and examine the latest trends in Product management
+            </p>
+
+            <ul class="about-list">
+
+              <li class="has-before">
+                Best Learning Platform with 10000+ Courses
+              </li>
+
+              <li class="has-before">
+                Best Proffessors with 10+ years of Experience
+              </li>
+
+              <li class="has-before">
+                Get Certified with Certificate After completion of Course
+              </li>
+
+            </ul>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Enroll Now</a>
+
+              <button class="flex-btn">
+                <div class="btn-icon">
+                  <ion-icon name="medal-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">10+ Years Experience</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle text-center">Topics related to</p>
+
+          <h2 class="h2 section-title text-center">Product Management</h2>
+
+          <p class="section-text text-center">
+            Get Certified in the most trending courses with Certificate.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-1.png" width="140" height="140" loading="lazy"
+                    alt="UI/UX Creative Design" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Product Making Strategy</h3>
+
+                  <p class="card-text">
+                    Our business strategy courses will equip you with the skills and
+                     knowledge needed to innovate, plan, and retain customers
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-2.png" width="140" height="140" loading="lazy" alt="App Development"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Management & Leadership</h3>
+
+                  <p class="card-text">
+                    Our Management & Leadership courses are designed to help you develop
+                     the essential skills and knowledge needed to succeed in today's fast-paced business environment.
+
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-3.png" width="140" height="140" loading="lazy"
+                    alt="Professional Content Writer" class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Professional Development</h3>
+
+                  <p class="card-text">
+                    our Professional Development courses designed to help you upskill, reskill, and stay adaptable
+                     in a rapidly changing job market. Our courses are tailored to support your career growth, whether you're looking to transition, advance, or refine your skills.
+
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-4.png" width="140" height="140" loading="lazy" alt="Graphic Design"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Soft Skills</h3>
+
+                  <p class="card-text">
+                    Our Soft Skills courses are designed to help you improve your communication, teamwork, leadership, and time management skills.
+
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-4.png" width="140" height="140" loading="lazy" alt="Graphic Design"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Entrepreneurship</h3>
+
+                  <p class="card-text">
+                    Our Entrepreneurship courses are designed to equip you with the skills, knowledge, and mindset necessary 
+                    to launch and grow a thriving business.
+
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card has-after">
+
+                <figure class="card-icon">
+                  <img src="images/service-4.png" width="140" height="140" loading="lazy" alt="Graphic Design"
+                    class="img">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">HR</h3>
+
+                  <p class="card-text">
+                    Our HR courses cover a wide range of topics, from recruitment and talent management to benefits and compensation.
+
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Start</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+            
+
+            
+            
+          </ul>
+
+          <a href="#" class="btn btn-primary" id="load-more">Load More</a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle text-center">-Why Choose Us-</p>
+
+          <h2 class="h2 section-title text-center">Reasons to Choose Us</h2>
+
+          <p class="section-text text-center">
+            You will get Free and Paid Courses with or without Certificate.You can Link your certificate with your Linkedin Profile.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="01">01</data>
+
+                <h3 class="h3 card-title">Free 30 days Access</h3>
+
+            
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="02">02</data>
+
+                <h3 class="h3 card-title">6 Month Of certification</h3>
+
+                
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="03">03</data>
+
+                <h3 class="h3 card-title">Video content Available</h3>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="04">04</data>
+
+                <h3 class="h3 card-title">Projects Completion</h3>
+
+                
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="05">05</data>
+
+                <h3 class="h3 card-title">Basic To Advance</h3>
+
+               
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="06">06</data>
+
+                <h3 class="h3 card-title">Affordable</h3>
+
+                
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FAQ
+      -->
+
+      <section class="section faq" aria-label="frequently asked questions">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Discover Frequently Asked Questions?</h2>
+
+            <a href="#" class="btn btn-primary">Work Together</a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    01. What is Product management and why is it important?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Product management is the discipline of planning, organizing, securing, managing, and controlling resources to achieve specific goals
+                        within a defined scope, budget, and timeline. It's crucial because it helps organizations manage complex projects efficiently, minimize risks, and achieve desired outcomes.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                   Q3. What are the key phases of a Product lifecycle?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    The typical Product lifecycle includes five phases:
+
+                    Initiation: Defining the Product scope, goals, and objectives.
+                    Planning: Creating a detailed project plan, including tasks, timelines, resource allocation, and risk management.
+                    Execution: Carrying out the project plan, monitoring progress, and managing resources.
+                    Monitoring and Control: Tracking project performance against the plan and taking corrective actions as needed.
+                    Closure: Finalizing the project, evaluating its success, and documenting lessons learned.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    03. What are some common Product management methodologies?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    There are several popular Product management methodologies, including:
+
+Waterfall: A linear, sequential approach where each phase is completed before moving to the next.
+Agile: An iterative approach that emphasizes flexibility and collaboration, with frequent feedback and adjustments.
+Scrum: A specific Agile framework that uses sprints (time-boxed iterations) to deliver incremental results.
+Kanban: A visual method for managing work and prioritizing tasks.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    04. What are the key skills needed for successful Product management?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    Effective Product managers possess a combination of technical and soft skills, such as:
+
+                    Leadership and communication skills
+                    Problem-solving and decision-making abilities
+                    Time management and organizational skills
+                    Risk management and contingency planning
+                    Team building and collaboration
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="faq-card">
+
+                <button class="card-action" data-accordion-action>
+                  <h3 class="h3 card-title">
+                    05. How can I gain practical experience in Product management?
+                  </h3>
+
+                  <div class="action-icon">
+                    <ion-icon name="add-outline" aria-hidden="true" class="open"></ion-icon>
+                    <ion-icon name="remove-outline" aria-hidden="true" class="close"></ion-icon>
+                  </div>
+                </button>
+
+                <div class="card-content">
+                  <p>
+                    There are several ways to gain practical experience in Product management:
+
+Take on leadership roles in group projects or extracurricular activities.
+Seek internships or part-time jobs in project management roles.
+Volunteer for project management-related organizations.
+Participate in online courses and certifications to enhance your skills.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <!-- <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">FunLearn</a>
+
+          <p class="footer-text">
+            The beautiful thing about learning is that nobody can take it away from you  </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+
+          <button type="submit" class="form-btn">
+              <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Related Programs</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Data Analyst</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketer</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Business Analyst</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">IT Support Specialist</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cyber Security</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">UX Designer</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">About FunLearn</p>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">What We Offer</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Work at FunLearn</a>
+          </li>
+
+        
+
+          <li>
+            <a href="#" class="footer-link">Our Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Latest Update</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location" aria-hidden="true"></ion-icon>
+
+            <address class="contact-link address">
+              Jharkhand, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+7894631546876" class="contact-link">+918965740120</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:info@hoolix.com" class="contact-link">info@FunLearn.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div> -->
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 FunLearn | All Rights Reserved by <a href="#" class="copyright-link">Amit Kumar</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
